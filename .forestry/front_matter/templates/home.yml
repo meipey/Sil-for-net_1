@@ -1,33 +1,33 @@
 ---
 label: home
-fields:
-  - type: text
-    name: nieuw
-    label: nieuw
-    default: made with stastic
-  - type: text
-    name: lorem
-    label: lorem
-    default: lorem
-  - type: textarea
-    name: kleur
-    label: kleur
-    default: kleurtest
-    config:
-      wysiwyg: true
-      schema:
-        format: html-blocks
-  - name: permalink
-    type: text
-    label: Permalink
-    config:
-      required: true
-  - name: layout
-    type: text
-    hidden: true
-    label: layout
-    default: home
-    config:
-      required: true
-display_field: permalink
 hide_body: true
+display_field: permalink
+fields:
+- type: text
+  name: nieuw
+  label: nieuw
+  default: made with stastic
+- type: text
+  name: lorem
+  label: lorem
+  default: lorem
+- type: textarea
+  name: kleur
+  label: kleur
+  default: kleurtest
+  config:
+    wysiwyg: true
+    schema:
+      format: html-blocks
+- name: permalink
+  type: text
+  label: Permalink
+  config:
+    required: true
+- name: layout
+  type: text
+  hidden: true
+  label: layout
+  default: home
+  config:
+    required: true

@@ -1,37 +1,43 @@
 ---
 label: Page 1
-fields:
-  - type: text
-    name: nieuw
-    label: nieuw
-    default: made with stastic
-  - type: text
-    name: lorem
-    label: lorem
-    default: lorem
-  - type: textarea
-    name: kleur
-    label: kleur
-    default: kleurtest
-    config:
-      wysiwyg: true
-      schema:
-        format: html-blocks
-  - type: file
-    name: logo2
-    label: logo2
-    default: ''
-  - name: permalink
-    type: text
-    label: Permalink
-    config:
-      required: true
-  - name: layout
-    type: text
-    hidden: true
-    label: layout
-    default: page-1
-    config:
-      required: true
-display_field: permalink
 hide_body: true
+display_field: permalink
+fields:
+- type: text
+  name: nieuw
+  label: nieuw
+  default: made with stastic
+- type: text
+  name: lorem
+  label: lorem
+  default: lorem
+- type: textarea
+  name: kleur
+  label: kleur
+  default: kleurtest
+  config:
+    wysiwyg: true
+    schema:
+      format: html-blocks
+- name: permalink
+  type: text
+  label: Permalink
+  config:
+    required: true
+- name: layout
+  type: text
+  hidden: true
+  label: layout
+  default: page-1
+  config:
+    required: true
+- name: logo2
+  type: file
+  config:
+    maxSize: 64
+  label: logo2
+  description: logo no 2
+  default: "/uploads/logo2.png"
+pages:
+- content/pages/page 1.md
+- content/pages/page-test.md

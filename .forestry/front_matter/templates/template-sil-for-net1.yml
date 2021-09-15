@@ -1,0 +1,17 @@
+---
+label: Template-sil-for-net1
+hide_body: false
+fields:
+- name: nieuw
+  type: text
+  config:
+    required: false
+  label: nieuw
+- name: subtitle
+  type: text
+  config:
+    required: false
+  label: subtitle
+pages:
+- content/pages/page_deze.md
+- page_deze/page_deze.md

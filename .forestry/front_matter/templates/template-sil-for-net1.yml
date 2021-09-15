@@ -13,5 +13,6 @@ fields:
     required: false
   label: subtitle
 pages:
+- content/pages/page 1.md
 - content/pages/page_deze.md
 - page_deze/page_deze.md
